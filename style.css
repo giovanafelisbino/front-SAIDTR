@@ -1,14 +1,16 @@
+/**Definição da posição do menu lateral*/
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /*Grudado no canto esquerdo da tela*/
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f6fb;
-    color: #1f2937;
-    min-height: 100vh;
+/*Titulo do chat*/
+.titulo_chat {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    color: #600099;
 }
 
 .app-shell {
@@ -30,11 +32,13 @@ body {
 .brand {
     padding: 5px 12px;
     font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: bold;
     font-weight: 700;
     color: #660099;
     letter-spacing: 1.5px;
 }
+
 
 .side-menu nav {
     display: flex;
@@ -60,28 +64,35 @@ body {
 
 .main-content {
     flex: 1;
-    padding: 32px;
+    padding: 25px; /*Espaçamento entre a caixa da conversa e o menu*/
+    display: flex;
+    flex-direction: column
 }
 
-.chat-panel,
+.chat-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 .content-panel {
     background: #ffffff;
     border-radius: 18px;
-    padding: 28px;
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
-    margin-bottom: 24px;
-}
+    padding: 40px; /*Distância dos balões de chat da borda do chat em si*/
+    box-shadow: 0 16px 40px #00000041; /*Sombra do chat*/
+    margin-bottom: 10px; /*Espaçamento do final da página*/
+}   
 
 .chat-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*Posição do título o chat*/
     gap: 16px;
     margin-bottom: 24px;
 }
 
 .chat-header h2 {
     margin-bottom: 8px;
+    font-size: 25px;
 }
 
 .chat-header p {
@@ -115,13 +126,17 @@ body {
     line-height: 1.6;
 }
 
+/*Classe das msgs do bot*/
 .message.bot {
+    font-family: Arial, Helvetica, sans-serif;
     align-self: flex-start;
-    background: #f3f4f6;
+    background: #f5f3f6;
     color: #111827;
 }
 
+/*Classe das msgs do user*/
 .message.user {
+    font-family: Arial, Helvetica, sans-serif;
     align-self: flex-end;
     background: #660099;
     color: white;
@@ -138,23 +153,24 @@ body {
 .chat-input-area {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 12px;
+    gap: 12px; /*Distância entre o botão de envio*/
+    margin-top: auto;
 }
 
 .chat-input-area input {
     width: 100%;
-    border: 1px solid #d1d5db;
+    border: 1px solid #d1d5db; /*Borda da caixa de texto*/
     border-radius: 16px;
-    padding: 14px 18px;
-    font-size: 1rem;
+    padding: 14px 18px; /*Distâncias do texto da caixa de texto*/
+    font-size: 15px;
 }
 
 .chat-input-area button {
     border: none;
-    border-radius: 16px;
+    border-radius: 100px;
     background: #660099;
     color: white;
-    padding: 14px 24px;
+    padding: 14px 14px;
     cursor: pointer;
     font-weight: 700;
 }

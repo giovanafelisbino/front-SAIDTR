@@ -1,3 +1,4 @@
+/*Definição da posição do menu lateral*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -115,12 +116,14 @@ body {
     line-height: 1.6;
 }
 
+/*CLasse das msgs dos bots*/
 .message.bot {
     align-self: flex-start;
     background: #f3f4f6;
     color: #111827;
 }
 
+/*Classe das msgs do user*/
 .message.user {
     align-self: flex-end;
     background: #660099;

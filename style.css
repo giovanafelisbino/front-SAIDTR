@@ -5,19 +5,21 @@
     padding: 0;
 }
 
+/*Formatção de componentes sem classe especifica*/
 body {
     font-family: Arial, sans-serif;
     background: #f4f6fb;
-    color: #1f2937;
+    color: #1e1e1e;
     min-height: 100vh;
 }
+
 
 .app-shell {
     display: flex;
-    min-height: 100vh;
+    min-height: 100px;
 }
 
-/*COR DO MENU LATERAL*/
+/*Formatação do menu lateral*/
 .side-menu {
     width: 240px;
     background: #d8d8d8;
@@ -27,107 +29,97 @@ body {
     gap: 24px;
 }
 
-/*COR DO "VIVO"*/
+/*Logo*/
 .brand {
     padding: 5px 12px;
-    font-size: 35px;
+    font-size: 30px;
     font-style: bold;
     font-weight: 700;
     color: #660099;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
+/*Define a disposição das classes "filhas" do menu (linhas 13 a 20)*/
 .side-menu nav {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: px;
 }
 
-/*COR DO TEXTO DO MENU*/
+/*Texto do menu lateral*/
 .side-menu a {
-    color: #5f5f5f;
+    color: #525252;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px 14px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 15px; /*Formato da seleção*/
     transition: background 0.2s ease, color 0.2s ease;
 }
 
+/*Seleção do menu lateral*/
 .side-menu a:hover,
 .side-menu a:focus {
-    background: #374151;
-    color: #ffffff;
+    background: #609;
+    color: rgb(255, 255, 255);
 }
 
 .main-content {
     flex: 1;
-    padding: 32px;
+    padding: 25px; /*Distância da caixa de chat das laterais*/
 }
 
 .chat-panel,
 .content-panel {
     background: #ffffff;
     border-radius: 18px;
-    padding: 28px;
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    padding: 30px;/*Distância dos componentes do chat da borda*/
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
     margin-bottom: 24px;
 }
 
+/*Título chat*/
 .chat-header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 24px;
+    align-items: center ;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #6d6d6d;
 }
 
 .chat-header h2 {
-    margin-bottom: 8px;
-}
-
-.chat-header p {
-    color: #6b7280;
-}
-
-.chat-action {
-    border: none;
-    background: #660099;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: 700;
+    margin-bottom: 2px;
 }
 
 .chat-window {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    max-height: 580px;
+    gap: 5px; /*Distância entre uma msg e outra*/
+    max-height: 300px; /*Tamanho máximo da caixa do chat*/
     overflow-y: auto;
     padding-right: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 }
 
 .message {
     max-width: 75%;
     padding: 18px 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     line-height: 1.6;
 }
 
 /*CLasse das msgs dos bots*/
 .message.bot {
     align-self: flex-start;
-    background: #f3f4f6;
-    color: #111827;
+    background: #eed9f8;
+    color: #000;
 }
 
 /*Classe das msgs do user*/
 .message.user {
     align-self: flex-end;
-    background: #660099;
-    color: white;
+    background: hsl(0, 0%, 91%);
+    color: rgb(45, 45, 45);
 }
 
 .message-label {

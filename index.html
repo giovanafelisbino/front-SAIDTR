@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SAIDTR - ChatBot</title>
+        <title>SAIDTR - ChatBot TESTE</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -13,8 +13,9 @@
             <aside class="side-menu">
                 <div class="brand">VIVO</div>
                 <nav>
-                    <a href="#Chat">Chat</a>
-                    <a href="#Relatar problema">Home</a>
+                    <a href="#chat">Chat</a>
+                    <a href="#problema">Relatar problema</a>
+                    <a href="#perfil">Perfil</a>
                 </nav>
             </aside>
             
@@ -22,26 +23,36 @@
                 <section class="chat-panel" id="chat">
                     <div class="chat-header">
                         <div>
-                            <h2>Chat</h2>
+                            <h2>SAIDTR</h2>
                         </div>
                     </div>
                     <div class="chat-window">
                         <div class="message bot">
                             <span class="message-label">SAIDTR</span>
-                            <p>Hello! How can I help you today?</p>
+                            SAIDTR
+
+                            <span class= texto_msg></span>Olá {nome}, seja bem-vinde ao SAIDTR! Fico feliz em te ver.
+                            Digite o número da opção desejada:
+
+                            <p> 1 - GBRIR DEMANDA</p>
+                            <p> 2 - DEMANDAS JÁ ABERTAS</p>
+                            <p> 3 - CONTINUAÇÃO DA CONVERSA</p>
+                            <p>Digite a opção desejada:</p>
+                        
+                            </p>
                         </div>
                         <div class="message user">
                             <span class="message-label">You</span>
-                            <p>I need support with my service.</p>
+                            <p>1</p>
                         </div>
                         <div class="message bot">
                             <span class="message-label">SAIDTR</span>
-                            <p>Sure! Please tell me what issue you're facing.</p>
+                            <p><i>Pergunta 1</i></p>
                         </div>
                     </div>
                     <form class="chat-input-area">
-                        <input type="text" placeholder="Type your message...">
-                        <button type="submit">Send</button>
+                        <input type="text" placeholder="Digite sua menasagem...">
+                        <button type="submit">📤</button>
                     </form>
                 </section>
             </main>

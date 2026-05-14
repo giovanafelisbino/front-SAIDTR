@@ -96,7 +96,6 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
     text-decoration: none;
     padding: 15px 20px;
     border-radius: 10px;
-    align-items: left;
     transition: background 0.2s ease, color 0.2s ease;
     font-family: VivoTypeBold;
 }
@@ -111,11 +110,16 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
     color:#609;
     font-size: 18px;
     text-shadow: 0 0 1px currentColor;
+    align-items: left;
 }
 
 .side-menu a:hover i,
 .side-menu a:focus i{
     color: #ffffff;
+}
+
+.perfil-area a{
+    align-items: bottom;
 }
 
 .main-content {

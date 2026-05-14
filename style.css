@@ -33,11 +33,15 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
 } 
 
 /*Titulo do chat*/
-.titulo_chat {
+/*.titulo_chat {
     font-family: VivoTypeBold;
     font-size: 28px;
-    color: #999999
+    color: #999999;
+
+    display: flex;
+    align-items: left;
 }
+*/
 
 .app-shell {
     display: flex;
@@ -47,19 +51,19 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
 /*COR DO MENU LATERAL*/
 .side-menu {
     width: 240px;
-    background: #d8d8d8;
+    background: #F2F2F2;
     padding: 24px 16px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.292);;
+    /*box-shadow: 0 16px 40px rgba(15, 23, 42, 0.292);*/
 }
 
 .logo-vivo {
-    height: 66px;   
-    width: 48px;
+    height: 57px;   
+    width: 100px;
     margin: 0 auto; /*Centralizou o texto*/
-    display: block;
+    display: flex;
 }
 
 /*COR DO "VIVO"*/
@@ -142,15 +146,24 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
     margin-bottom: 24px;
 }
 
-.chat-header i{
+.chat-title {
+    display: flex;
+    align-items: center;
+}
+
+.chat-title i{
     font-size: 28px;
     padding: 5px;
     color: #898989;
+    text-shadow: 0 0 1px currentColor;
 }
 
-.chat-header span{
-    padding: 10px 5px;
+.chat-title span{
+    padding: 1px 6px;
     color: #898989;
+    font-size: 17px;
+    font-family: VivoTypeBold;
+    align-items: center;
 }
 
 .chat-action {
@@ -192,7 +205,7 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
 .message.user {
     font-family: VivoTypeLight;
     align-self: flex-end;
-    background: #d8d8d8;
+    background: #F2F2F2;
     color: rgb(1, 0, 0);
 }
 
@@ -211,6 +224,11 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
     grid-template-columns: 1fr auto;
     gap: 12px; /*Distância entre o botão de envio*/
     margin-top: auto;
+}
+
+.chat-input-area i{
+    font-size: 15px;
+    padding: 1px 1px;
 }
 
 /*Texto da caixa de msg*/

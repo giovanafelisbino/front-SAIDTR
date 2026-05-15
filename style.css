@@ -118,8 +118,9 @@ src: url('../fonts/VIVOTYPEREGULAR.OTF');
     color: #ffffff;
 }
 
-.perfil-area a{
-    align-items: bottom;
+.perfil-area{
+    margin-top: auto;
+    padding: 20px 0px;
 }
 
 .main-content {

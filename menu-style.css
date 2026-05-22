@@ -1,0 +1,155 @@
+@font-face{
+    font-family:'VivoRegular';
+    src: url('../fonts/VIVO_REGULAR.OTF');
+}
+
+@font-face{
+    font-family:'VivoTypeBold';
+    src: url('../fonts/VIVOTYPEBOLD.OTF');
+}
+
+@font-face{
+    font-family:'VivoTypeLight';
+    src: url('../fonts/VIVOTYPELIGHT.OTF');
+}
+
+@font-face{
+    font-family:'VivoTypeMedium';
+    src: url('../fonts/VIVOTYPEMEDIUM.OTF');
+}
+
+@font-face{
+    font-family:'VivoTypeRegular';
+    src: url('../fonts/VIVOTYPEREGULAR.OTF');
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app-shell {
+    display: flex;
+    min-height: 100vh; /*deixa o conteudo ate o final da tela*/
+}
+
+.side-menu {
+    width: 250px;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.05);
+    gap: 24px;
+    padding: 24px 16px
+}
+
+.logo-vivo {
+    height: 62px;
+    width: 105px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.side-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.side-menu a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #727272;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: background 0.2s ease, color 0.2s ease fade-out 0.1s;
+    font-family: VivoTypeBold;
+}
+
+
+.side-menu a:hover,
+.side-menu a:focus {
+    background:#609;
+    color:#ffffff;
+}
+
+.side-menu i{
+    color: #609;
+    font-size: 18px;
+    text-shadow: 0 0 1px currentColor;
+    align-items: left;
+}
+
+.side-menu a:hover i,
+.side-menu a:focus i {
+    color: #ffffff;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-family: 'VivoTypeMedium', sans-serif;
+}
+
+.menu-item i {
+    width: 24px;
+    font-size: 1.2rem;
+    color: #660099;
+    transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: #f3e8ff;
+    color: #660099;
+}
+
+.menu-item.active {
+    background: linear-gradient(135deg, #660099, #8a2be2);
+    color: white;
+    box-shadow: 0 4px 10px rgba(102, 0, 153, 0.2);
+}
+
+.menu-item.active i {
+    color: white;
+}
+
+.problema-area {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #edf2f7;
+}
+
+@media (max-width: 800px) {
+    .side-menu {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 24px;
+    }
+    .logo-area {
+        margin-bottom: 0;
+    }
+    .side-menu nav {
+        flex-direction: row;
+        gap: 12px;
+    }
+    .problema-area {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+}

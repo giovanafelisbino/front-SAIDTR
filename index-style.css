@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'VivoTypeBold';
+    src: url('fonts/VIVOTYPEBOLD.OTF');
+}
+@font-face {
+    font-family: 'VivoRegular';
+    src: url('fonts/VIVO_REGULAR.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeLight';
+    src: url('fonts/VIVOTYPELIGHT.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeMedium';
+    src: url('fonts/VIVOTYPEMEDIUM.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeRegular';
+    src: url('fonts/VIVOTYPEREGULAR.OTF');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'VivoRegular', sans-serif;
+    background-color: #ffffff; /*cor geral da pagina*/
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 32px 40px;
+    overflow-y: auto;
+}
+
+.content-panel {
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* animação de troca de página (opcional, sem impacto visual) */
+.page {
+    display: none;
+    animation: fadeIn 0.2s ease;
+}
+.page.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* responsividade geral */
+@media (max-width: 800px) {
+    .app-shell {
+        flex-direction: column;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .content-panel {
+        padding: 20px;
+    }
+}

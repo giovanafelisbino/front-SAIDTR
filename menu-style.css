@@ -107,7 +107,7 @@
     }
 
 .problems-area {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     margin-top: auto;
     padding-bottom: 45px; /*distancia do botão de problema da base*/

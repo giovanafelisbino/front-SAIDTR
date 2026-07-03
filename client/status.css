@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'VivoTypeBold';
+    src: url('fonts/VIVOTYPEBOLD.OTF');
+}
+@font-face {
+    font-family: 'VivoRegular';
+    src: url('fonts/VIVO_REGULAR.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeLight';
+    src: url('fonts/VIVOTYPELIGHT.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeMedium';
+    src: url('fonts/VIVOTYPEMEDIUM.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeRegular';
+    src: url('fonts/VIVOTYPEREGULAR.OTF');
+}
+
+#features-1 .priority {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fef251;
+    border-radius: 20px;
+    border: 5px solid #fef251;
+
+    padding: 5px 10px; /*lateral esquerda, lateral superior*/
+
+    font-size: 12px;
+    color: #784600;
+
+}
+
+#features-1 .step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #a1dff9;
+    border-radius: 20px;
+    border: 5px solid #a1dff9;
+
+    padding: 5px 10px; /*lateral esquerda, lateral superior*/
+
+    font-size: 12px;
+    color: #240078;
+
+}

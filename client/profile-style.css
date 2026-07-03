@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'VivoTypeBold';
+    src: url('fonts/VIVOTYPEBOLD.OTF');
+}
+@font-face {
+    font-family: 'VivoRegular';
+    src: url('fonts/VIVO_REGULAR.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeLight';
+    src: url('fonts/VIVOTYPELIGHT.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeMedium';
+    src: url('fonts/VIVOTYPEMEDIUM.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeRegular';
+    src: url('fonts/VIVOTYPEREGULAR.OTF');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#left-area {
+    width: 35%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.picture-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+
+    height: 50%;
+    width: 100%;
+}
+
+.photo {
+    max-width: 50vw;
+    max-height: 50vh;
+    
+    width: 35vh;
+    height: 35vh;
+
+    border: 5px solid #BD4AFF;
+    border-radius: 100%;
+}
+
+.picture-area a {
+    padding: 20px;
+
+    font-size: 33px;
+    font-family:'VivoTypeBold',sans-serif;
+    -webkit-text-stroke: 1px;
+
+    color: #660099;
+}
+
+.description-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+
+    width: 100%;
+    height: 50%;
+}
+
+.description-bubble {
+    display: flex;
+    flex-direction: column;
+
+    height: 90%;
+    width: 80%;
+
+    padding: 20px 20px;
+
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#right-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 65%;
+    height: 100vh;
+}
+
+.demands-bubble {
+    display: flex;
+    justify-content: center;
+    
+    height: 85%;
+    width: 95%;
+
+    padding: 40px 0;
+
+    background: white;
+    border-radius: 80px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.inner-square {
+    width: 90%;
+    height: 100%;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.demands {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    flex-shrink: 0;
+    overflow: hidden;
+    
+    height: 245px;  
+    width: 90%;
+
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #BABABA;
+
+    font-family: 'VivoTypeLight', sans-serif;
+}
+
+.demand-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 10px;
+    gap: 20px;
+    padding: 10px 0 12px 40px; /*cima, esquerda, baixo, direita */
+
+    font-size: 20px;
+    font-family: 'VivoTypeBold', sans-serif;
+    color: #660099;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 40px;
+    margin-bottom: 10px;
+
+    font-size: 17px;
+
+    width: calc(100% - 80px);
+    height: 65%;
+}
+
+.graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 22%;
+
+    background-color: rgb(150, 173, 158);
+}
+
+.demand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    width: 78%;
+    padding: 15px;
+    row-gap: 12px;
+
+    -webkit-text-stroke: 0.3px;
+    font-family: 'VivoTypeBold', sans-serif;
+}
+
+.sub-stage {
+    font-size: 17px;
+}
+
+.sub-stage span {
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
+    gap: 5px;
+}
+
+.actual-stage {
+    font-size: 15px;
+    font-family: 'VivoTypeLight', sans-serif;
+}
+
+.actual-stage-bubble {
+    padding: 15px;
+    margin-top: 10px;
+
+    font-family: 'VivoTypeLight', sans-serif;
+    font-size: 15px;
+
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.actual-stage span {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    gap: 5px;
+}
+
+.actual-stage.alert,
+.actual-stage.alert i{
+    font-size: 15px;
+    color: #d80000;
+    font-family: 'VivoTypeLight', sans-serif;
+}

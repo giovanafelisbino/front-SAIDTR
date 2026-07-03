@@ -19,36 +19,34 @@
     src: url('fonts/VIVOTYPEREGULAR.OTF');
 }
 
-#features-1 .priority {
+/*
+  IMPORTANTE:
+  Antes, essas regras estavam presas em "#features-1 .priority" e
+  "#features-1 .step", ou seja, só a demanda #001 recebia o estilo.
+  A partir de #002 as bubbles ficavam sem cor nenhuma.
+
+  Agora o formato (fonte, padding, borda arredondada) é genérico pra
+  QUALQUER demanda. A COR de cada bubble passa a ser definida pelo
+  JavaScript (conditional-formatting.js), de acordo com o texto
+  (ex: "ALTA", "MÉDIA", "Arquitetura de soluções"...).
+*/
+
+.priority,
+.step {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    background-color: #fef251;
     border-radius: 20px;
-    border: 5px solid #fef251;
+    border: 5px solid transparent;
 
-    padding: 5px 10px; /*lateral esquerda, lateral superior*/
+    padding: 5px 10px;
 
     font-size: 12px;
-    color: #784600;
+    font-family: 'VivoTypeMedium', sans-serif;
 
-}
-
-#features-1 .step {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #a1dff9;
-    border-radius: 20px;
-    border: 5px solid #a1dff9;
-
-    padding: 5px 10px; /*lateral esquerda, lateral superior*/
-
-    font-size: 12px;
-    color: #240078;
-
+    /* cor padrão (fallback), caso o JS ainda não reconheça o texto */
+    background-color: #e0e0e0;
+    color: #4a4a4a;
 }

@@ -17,10 +17,10 @@
 */
 
 const PRIORITY_STYLES = {
-    "URGENTE": { bg: "#ffd2d2", border: "#ff4d4d", color: "#7a0000" },
-    "ALTA":    { bg: "#ffe1c2", border: "#ff9a3c", color: "#7a3d00" },
+    "URGENTE": { bg: "#ffb7b7", border: "#ffb7b7", color: "#7a0000" },
+    "ALTA":    { bg: "#fccea0", border: "fccea0", color: "#7a3d00" },
     "MEDIA":   { bg: "#fef251", border: "#fef251", color: "#784600" },
-    "BAIXA":   { bg: "#d7f5df", border: "#5ec97b", color: "#0b5c26" },
+    "BAIXA":   { bg: "#abfdc1", border: "#abfdc1", color: "#0b5c26" },
 };
 
 const STEP_STYLES = {

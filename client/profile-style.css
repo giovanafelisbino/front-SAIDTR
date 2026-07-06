@@ -1,22 +1,8 @@
-@font-face {
-    font-family: 'VivoTypeBold';
-    src: url('fonts/VIVOTYPEBOLD.OTF');
-}
-@font-face {
-    font-family: 'VivoRegular';
-    src: url('fonts/VIVO_REGULAR.OTF');
-}
-@font-face {
-    font-family: 'VivoTypeLight';
-    src: url('fonts/VIVOTYPELIGHT.OTF');
-}
-@font-face {
-    font-family: 'VivoTypeMedium';
-    src: url('fonts/VIVOTYPEMEDIUM.OTF');
-}
-@font-face {
-    font-family: 'VivoTypeRegular';
-    src: url('fonts/VIVOTYPEREGULAR.OTF');
+:root {
+    --primary: #660099;
+    --border: #BABABA;
+    --shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    --background: #FFFFFF;
 }
 
 *{
@@ -64,14 +50,14 @@
     border-radius: 100%;
 }
 
-.picture-area a {
+.picture-area span {
     padding: 20px;
 
     font-size: 33px;
     font-family:'VivoTypeBold',sans-serif;
     -webkit-text-stroke: 1px;
 
-    color: #660099;
+    color: var(--primary);
 }
 
 .description-area {
@@ -93,9 +79,9 @@
 
     padding: 20px 20px;
 
-    background-color: #ffffff;
+    background-color: var(--background);
     border-radius: 50px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow)
 }
 
 #right-area {
@@ -117,9 +103,9 @@
 
     padding: 40px 0;
 
-    background: white;
+    background: var(--background);
     border-radius: 80px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow);
 
 }
 
@@ -145,9 +131,9 @@
     overflow: hidden;
     
     height: 245px;  
-    width: 90%;
+    width: 95%;
 
-    background-color: #ffffff;
+    background-color: var(--background);
     border-radius: 50px;
     border: 1px solid #BABABA;
 
@@ -177,7 +163,7 @@
 
     font-size: 20px;
     font-family: 'VivoTypeBold', sans-serif;
-    color: #660099;
+    color: var(--primary);
 }
 
 .general-info {
@@ -245,7 +231,7 @@
 
     border-radius: 15px;
     background-color: #e6e6e6;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow);
 
 }
 

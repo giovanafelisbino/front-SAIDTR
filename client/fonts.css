@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'VivoTypeBold';
+    src: url('fonts/VIVOTYPEBOLD.OTF');
+}
+@font-face {
+    font-family: 'VivoRegular';
+    src: url('fonts/VIVO_REGULAR.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeLight';
+    src: url('fonts/VIVOTYPELIGHT.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeMedium';
+    src: url('fonts/VIVOTYPEMEDIUM.OTF');
+}
+@font-face {
+    font-family: 'VivoTypeRegular';
+    src: url('fonts/VIVOTYPEREGULAR.OTF');
+}

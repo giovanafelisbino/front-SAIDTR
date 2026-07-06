@@ -1,36 +1,3 @@
-@font-face {
-    font-family: 'VivoTypeBold';
-    src: url('fonts/VIVOTYPEBOLD.OTF');
-}
-@font-face {
-    font-family: 'VivoRegular';
-    src: url('fonts/VIVO_REGULAR.OTF');
-}
-@font-face {
-    font-family: 'VivoTypeLight';
-    src: url('fonts/VIVOTYPELIGHT.OTF');
-}
-@font-face {
-    font-family: 'VivoTypeMedium';
-    src: url('fonts/VIVOTYPEMEDIUM.OTF');
-}
-@font-face {
-    font-family: 'VivoTypeRegular';
-    src: url('fonts/VIVOTYPEREGULAR.OTF');
-}
-
-/*
-  IMPORTANTE:
-  Antes, essas regras estavam presas em "#features-1 .priority" e
-  "#features-1 .step", ou seja, só a demanda #001 recebia o estilo.
-  A partir de #002 as bubbles ficavam sem cor nenhuma.
-
-  Agora o formato (fonte, padding, borda arredondada) é genérico pra
-  QUALQUER demanda. A COR de cada bubble passa a ser definida pelo
-  JavaScript (conditional-formatting.js), de acordo com o texto
-  (ex: "ALTA", "MÉDIA", "Arquitetura de soluções"...).
-*/
-
 .priority,
 .step {
     display: flex;

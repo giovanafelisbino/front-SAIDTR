@@ -1,0 +1,185 @@
+:root {
+    --primary: #660099;
+    --secondary: #BD4AFF;
+
+    --default: #ffffff;
+    --gray1: #efefef;
+    --gray2: #e7e7e7;
+    --gray3: #7e7e7e;
+
+    --shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    --stroke: -webkit-text-stroke: 0.5px
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to top, #bd4aff58, #bd4aff15,#ffffff);
+
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+#left-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 30%;
+}
+
+#left-area img {
+    max-width: 20rem; /*define o tamanho máximo que a logo pode chegar*/
+    width: 100%; /*ocupa os 30% por completo*/
+    height: auto; /*ajusta de acordo com a comparação da escala com o width*/
+
+    aspect-ratio: 1.5/1; /*esclada que a foto segue*/
+}
+
+#right-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 50%;
+}
+
+.main-bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 80vh;
+    width: 30vw;
+
+    border-radius: 50px;
+    background: var(--default);
+
+    box-shadow: var(--shadow);
+
+}
+
+#user-input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    gap: 0.7rem;
+    padding: 2rem 0 0 0;
+}
+
+#login-text {
+    font-family: 'VivoTypeBold',sans-serif;
+    font-size: 2.5rem;
+
+    -webkit-text-stroke: 0.5px
+
+}
+
+.text {
+    width: 80%;
+    max-width: 20rem;
+
+    text-align: left;
+    
+    font-size: 1rem;
+    font-family: 'VivoTypeRegular',sans-serif;
+}
+
+.input {
+    display: flex;
+    align-items: flex-start;
+    vertical-align: top;
+    
+    height: 3.5rem;
+    max-width: 20rem;
+    width: 80%;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: var(--gray2);
+
+    font-size: 0.9rem;
+    font-family: 'VivoTypeLight',sans-serif;
+
+    border: none;
+}
+
+.clickable {
+    background: none;
+    border: none;
+
+    font-family: 'VivoTypeBold',sans-serif;
+    font-size: 0.9rem;
+    color: var(--primary);
+
+    text-decoration: underline ;
+}
+
+.clickable:hover,
+.clickable:focus{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#register-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 1.5rem;
+    gap: 5px;
+}
+
+#register-area p{
+    font-family: 'VivoTypeLight', sans-serif;
+    font-size: 0.9rem;
+}
+
+#login-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.4rem;
+
+    height: 4rem;
+    width: 10rem;
+
+    background: linear-gradient(to right, var(--primary), #380054);
+;
+    border: none;
+    border-radius: 15px;
+
+    font-family: 'VivoTypeBold',sans-serif;
+    color: var(--default);
+    font-size: 1.5rem;
+}
+
+#login-button i{
+    -webkit-text-stroke: 0.5px;
+}
+
+#login-button:focus,
+#login-button:hover {
+    opacity: 85%;
+    cursor: pointer;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="./icons/bootstrap-icons-1.13.1/bootstrap-icons.css">
+        
+        <link rel="stylesheet" href="./fonts.css">
+        <link rel="stylesheet" href="./status.css">
+        <link rel="stylesheet" href="./profile-style.css">
+    </head>
+
+    <body class="page-content">
+        <div id="left-area">
+            <div class="picture-area">
+                <img class="photo" src="./src/foto-perfil.jpg" alt="foto-perfil">
+                <span>Olá Lúcia!</span>
+            </div>
+
+            <div class="description-area">
+                <div class="description-bubble">
+                    <div class="open-projects bubble">
+                        <i class="bi bi-folder"></i>
+                        <span class="project message">Projetos abertos:</span>
+                        <span class="project variable">3</span>
+                    </div>
+
+                    <div class="pending-actions bubble">
+                        <i class="bi bi-exclamation-octagon"></i>
+                        <span class="actions message">Ações pendentes:</span>
+                        <span class="actions variable">1</span>
+                    </div>
+
+                    <div class="waiting-return bubble">
+                        <i class="bi bi-repeat"></i>
+                        <span class="return message">Aguardando retorno:</span>
+                        <span class="return variable">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right-area">
+            <div class="demands-bubble">
+                <div class="inner-square">
+                    <div class="demands">
+
+                        <div class="demand-header">
+                            <div class="title">
+                                <span>#001 - Teste demanda 1</span>
+                                <div class="features" id="features-1">
+                                    <div class="priority">
+                                        <span>MÉDIA</span>
+                                    </div>
+                                    <div class="step">
+                                        <span>Arquitetura de soluções</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="general-info">
+                            <div class="graph">GRÁFICO</div>
+                            <div class="demand-info">
+                                <div class="status">
+                                    <p class="actual-stage alert">
+                                        <i class="bi bi-exclamation-triangle-fill"></i>
+                                        {Preset de status}
+                                    </p>
+                                </div>
+                                <div class="sub-stage">
+                                    <span>
+                                        <p>Sub-etapa atual:</p>
+                                        <p class="actual-stage">Avaliação de Arquitetura</p>
+                                    </span>
+                                </div> 
+                                <div class="last-activity">
+                                    <p>Última atividade:</p>
+                                    <p class="actual-stage-bubble">Projeto sob análise do time de PMO</p>
+                                </div>    
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="demands">
+                        <div class="demand-header">
+                            <div class="title">
+                                <span>#002 - Demanda 02</span>
+                                <div class="features" id="features-2">
+                                    <div class="priority">
+                                        <span>ALTA</span>
+                                    </div>
+                                    <div class="step">
+                                        <span>Aprovação de orçamento</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="general-info">
+                            <div class="graph">GRÁFICO</div>
+                            <div class="demand-info">
+                                <div class="status">
+                                    <p class="actual-stage alert">
+                                        <span>
+                                            <i class="bi bi-exclamation-triangle-fill"></i>
+                                            {Preset de status}
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="sub-stage">
+                                    <span>
+                                        <p>Sub-etapa atual:</p>
+                                        <p class="actual-stage">Orçamento e alocação de recursos</p>
+                                    </span>
+                                </div> 
+                                <div class="last-activity">
+                                    <p>Última atividade:</p>
+                                    <p class="actual-stage-bubble">Orçamento enviado para aprovação do time de TI</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demands" id="demanda-2">
+                        <div class="demand-header">
+                            <div class="title">
+                                <span>#003 - Demanda 03</span>
+                                <div class="features" id="features-2">
+                                    <div class="priority">
+                                        <span>BAIXA</span>
+                                    </div>
+                                    <div class="step">
+                                        <span>Aprovação de orçamento</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="general-info">
+                            <div class="graph">GRÁFICO</div>
+                            <div class="demand-info">
+                                <div class="status">
+                                    <p class="actual-stage alert">
+                                        <span>
+                                            <i class="bi bi-exclamation-triangle-fill"></i>
+                                            {Preset de status}
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="sub-stage">
+                                    <span>
+                                        <p>Sub-etapa atual:</p>
+                                        <p class="actual-stage">Orçamento e alocação de recursos</p>
+                                    </span>
+                                </div> 
+                                <div class="last-activity">
+                                    <p>Última atividade:</p>
+                                    <p class="actual-stage-bubble">Orçamento enviado para aprovação do time de TI</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./script/conditionalFormat.js"></script>
+    </body>
+
+</html>
